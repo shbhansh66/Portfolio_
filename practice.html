@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+     <link rel="stylesheet" href="./output.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="matter.js" defer></script>
+
+
+</head>
+
+<body class="bg-gray-900 text-white">
+   <header  class=" h-screen  grid grid-rows-[12%_50%_10%] gap-24 relative   ">
+     <!-- Resume pdf -->
+     <div id="resumeContainer" class="absolute bottom-12 2xl:left-[23%] 2xl:top-[10rem]  z-60 ">
+      <!-- Cancel img -->
+              <img id="cancel_1" class="w-8 h-8 z-60 absolute top-6 right-2"  src="./images/cancel.png" alt="">
+          <!-- resume Image -->
+              <img id="resume_img" class="w-[35rem] h-[50rem] 2xl:w-[60rem] 2xl:h-[75rem] relative top-[1rem] left-4   z-50 hidden " src="./PDF/ShubhanshuResume (1)_page-0001.jpg" alt="">
+            </div>
+    
+
+
+
+    <!-- Navbar -->
+    <nav class=" grid grid-cols-[65%_35%] 2xl:px-16 xl:px-12">
+        <!-- Logo -->
+        <div class=" px-4 py-4 relative lg:left-18 xl:left-24 2xl:left-36 md:left-10 z-40">
+          <img class="w-16 transform transition-transform duration-300 hover:scale-125 " 
+     src="./images/logo.png" alt="logo">
+
+</div>
+        <!-- dark -->
+        <div class=" flex justify-center items-center gap-3 2xl:gap-8 pl-12 pb-2  static">
+           
+            <img class="w-5 md:w-7  transform transition-transform duration-300 hover:scale-125 z-40" id="speaker1" src="./images/speaker1.png" alt="">
+            <img class="w-5 md:w-7  transform transition-transform duration-300 hover:scale-125 z-40 hidden" id="speaker2" src="./images/speaker2.png" alt="">
+            <img class="w-6 md:w-8  transform transition-transform duration-300 hover:scale-125 z-40" id="sun" src="./images/sun2.png" alt="sun">
+            <img class="w-6 md:w-8 hidden  transform transition-transform duration-300 hover:scale-125 z-40 " id="moon" src="./images/moon2.png" alt="">
+           <a href="tel:7460929931" class="pointer-events-auto z-50">
+            <img class="w-7 md:w-8  transform transition-transform duration-300 hover:scale-125 " src="./images/phone2.png" alt="">
+            </a>
+            <img class="w-7 md:w-8  transform transition-transform duration-300 hover:scale-125 z-40" src="./images/whatsapp2.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Section -->
+
+    <!-- All About Me  -->
+
+    
+
+
+    <section class=" grid grid-cols-[0.5fr_4fr_1fr]">
+      <div class=""></div>
+      <!-- Name and logo -->
+      <div class=" grid grid-cols-[50%_50%] relative lg:left-16 ">
+        <!-- NAME ans About me -->
+        <div class=" grid grid-rows-[60%_40%] relative md:bottom-6 sm:left-12 lg:left-12 lg:bottom-12  xl:left-36 2xl:mx-10" >
+            <!-- Name -->
+            <div id="Name" class="relative 2xl:bottom-10 ">
+                           <h1 id="my_Name" class="pointer-events-auto text-5xl  md:text-[55px] sm:text-[50px] lg:text-[60px] xl:text-[68px] 2xl:text-[80px]  mr-12 relative top-[60%]  z-50 font-extrabold   hover:bg-gradient-to-r hover:from-pink-300 hover:to-blue-300 
+           hover:bg-clip-text hover:text-transparent ">Shubhanshu</h1>
+                          <h2 class="font-bold text-xl font-['Merriweather'] italic my-4 md:my-8 relative top-[58%] 2xl:text-[25px] xl:text-[20px] lg:text-[15px] z-10 pointer-events-none">MERN Stack Developer</h2>
+            </div>
+            <!-- About Me -->
+            <div class=" relative md:top-8">
+                 <button class= "  bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group z-40"> About Me
+            <img class="absolute top-1/2 -translate-y-1/2 -right-9 group-hover:-right-8 ease-in-out duration-100 z-30" src="./images/horiarrow.png" alt="Arrow">
+            </button>
+            </div>
+
+            <!-- Resume -->
+
+             <div class=" relative bottom-10 sm:top-0.5
+            ">
+
+           
+
+<!-- Resuem -->
+                <button onclick="showResume()"  class= "bg-[#4595eb]  px-3 rounded font-extrabold bg-gradient-to-l from-[#58e88d] to-[#98da96e6] relative bottom-20 hover:scale-110 ease-in-out duration-100 group z-50">Resume
+                </button>
+               <a href="./PDF/ShubhanshuResume.pdf" download="ShubhanshuResume.pdf"> <img class="w-6 relative bottom-[92px] left-24 -translate-y-1/2 -right-9 hover:scale-90 ease-in-out duration-100 z-50" src="./images/download (2).png" alt="download"></a>
+            </div>
+        </div>
+        <!-- LOGO -->
+        <div class=" flex flex-col  items-start relative right-10 lg:right-36  md:flex-col justify-center mt-6 md:mt-0 ">
+  <img class=" pointer-events-none z-40" src="./images/logo1.png" alt="">
+  
+        </div>
+      </div>
+
+      <!-- socail Media -->
+      <div class=" flex flex-col justify-center items-center md:items-end gap-6 relative md:right-6 z-50  ">
+        <img class="w-7  transform transition-transform duration-300 hover:scale-125" src="./images/linkedin.svg" alt="">
+           <img class="w-7  transform transition-transform duration-300 hover:scale-125" src="./images/email.svg" alt="">
+              <img class="w-7  transform transition-transform duration-300 hover:scale-125" src="./images/leetcode.png" alt="">
+                 <img class="w-7  transform transition-transform duration-300 hover:scale-125" src="./images/github.svg" alt="">
+                    <img class="w-7  transform transition-transform duration-300 hover:scale-125" src="./images/gfg.png" alt="">
+
+      </div>
+
+    </section>
+
+    <!-- buttom -->
+
+    <div class=" text-center ">
+          <button id="latest_work" class=" relative top-3  hover:scale-110 px-6 py-2 bg-gradient-to-r from-[#311dcc] to-[#2b3ddbe6] rounded-md text-xl md:text-2xl ease-in-out duration-100 z-40 ">
+    Latest Works
+    <img src="./images/arrow.png" alt="Arrow" 
+         class="w-8 md:w-10 absolute top-[110%] left-1/2 -translate-x-1/2 
+      group-hover:top-[110%] 
+                transition-all ease-in-out duration-300  "/>
+              </button>
+              <img class="w-6 h-10 relative left-[48%] top-18 md:left-[48.5%] lg:left-[49%] xl:left-[49.5%] 2xl:left-[49.5%] z-40"  src="./images/LINE.png" alt="">
+            </div>
+
+      
+         
+   </header>
+
+   <!-- Canca Ball MOtion -->
+   <div class="absolute inset-0 z-0 hidden sm:block max-w-full" id="wrapper-canvas">
+   
+   </div>
+
+   <!-- Main😜😜😜😜😜😜 -->
+
+   <main class="max-w-screen-xl   mx-auto my-4  ">
+     <!-- All about Laptop -->
+      <h1 class=" w-max mx-auto px-4 py-2 text-center  text-[25px] sm:text-[27px] text-[#1788ae]  border-[#1788ae] font-bold  relative z-10">Latect Works and Certificates
+        
+        <div class="text-[#1788ae] w-sm h-[2px]  bg-[#1788ae] my-2 hidden sm:block "></div>
+        
+      </h1>
+      
+      
+      
+      <div class="px-4 w-full h-auto relative top-4  flex flex-col sm:flex-row  ">
+
+       
+        
+        
+        
+        <!-- laptop ancertag --> 
+        <a href="" class=" sm:h-1/2 sm:w-[100%] relative sm:top-24 z-10  ">
+          <div class="flex flex-col gap-2 justify-center items-center py-4">
+            <div class="relative w-[66%] md:w-[%] lg:w-[66%]  sm:w-[66%]  xl:w-[66%] 2xl:w-[65%]  lg:right-8    2xl:right-24 xl:right-16 sm:mr-10  md:bottom-12  lg:bottom-20 xl:bottom-24 2xl:bottom-20  z-30  transform transition-transform duration-300 hover:scale-90 drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              <!-- MacBook image -->
+              <img src="./images/macbook 8.png" alt="MacB ook" class="z-20  drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              
+              <!-- Weather screenshot inside screen -->
+              <img src="./images/portfolioimg.png" 
+              class="absolute top-[3%] sm:left-[11%]  lg:left-[10.5%] xl:left-[10%] 2xl:left-[10.5%] left-[42px] w-[79%] h-[90%] object-cover rounded-lg z-10 "
+              alt="Weather App">
+            </div>
+            
+            <span class="bg-[#459bd5] flex justify-center items-center gap-2 border-[#459bd5] rounded-xl text-xl py-1 px-1 relative sm:right-4 sm:hidden z-20">
+              WeatherWeb
+              <img src="./images/external-link.svg" alt="">
+            </span>
+
+            </div>
+     </a>
+
+ 
+        <div class="w-[1px] h-[100%] xl:h-[100%] bg-blue-500 absolute left-[50%] lg:left-[49.7%]  z-0 bottom-8 hidden sm:block">
+          
+    </div>
+    <div class="w-6 h-6 sm:w-5 sm:h-5 bg-black rounded-full border-[3px] border-yellow-600 absolute top-1/2 sm:top-[44%] md:top-[37%]  lg:top-[50%] xl:top-[50%] 2xl:top-[50%] left-[48.55%] sm:left-[48.2%] md:left-[48.55%] lg:left-[48.7%] xl:left-[48.9%] z-10 hidden sm:block">
+      </div>
+      <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] sm:top-[46%] md:top-[40%] lg:top-[54%] xl:top-[53%] 2xl:top-[53%]  absolute top-1/2 hidden sm:block"></div>
+
+
+
+     
+     <!-- Content about laptop -->
+
+     <div class="w-full my-4 sm:pl-4 sm:ml-8 2xl:ml-12">
+      <h3 class="text-[#ffe578]   text-[20px] font-bold">💼 Personal Portfolio Website</h3>
+      <span class="text-[#ffe578]   text-[20px] text-base ">(Website)</span>
+      <p class="text-justify text-sm font-bold pt-1 ">A fully responsive portfolio website designed and developed to showcase my skills, projects, and achievements in web development. The site highlights my technical expertise and provides an interactive way for recruiters and visitors to connect with me.</p>
+      <ul class="flex flex-wrap gap-4  mt-2  ">
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75 ">#HTML</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#CSS</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#JavaScript</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Tailwind Css</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text- transform transition-transform duration-300 hover:scale-75">#MatterJs</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Git & GitHub</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75" >#Vs Code</li>
+      </ul> 
+     </div>
+     </div>
+     
+  <!-- Second Project🤣🤣✌️ -->
+   <div class="px-4 w-full h-auto relative top-4  flex flex-col sm:flex-row  ">
+
+       
+        
+        
+        
+        <!-- laptop ancertag --> 
+        <a href="" class=" sm:h-1/2 sm:w-[100%] relative sm:top-28 z-10 order-1 sm:order-2 ">
+          <div class="flex flex-col gap-2 justify-center items-center py-4">
+            <div class="relative w-[66%] md:w-[70%] lg:w-[68%]  sm:w-[68%]  xl:w-[68%] 2xl:w-[67%]  sm:left-6 lg:right-8     2xl:right-24 xl:right-16  md:bottom-12  lg:bottom-20 xl:bottom-24 2xl:bottom-20  z-30  transform transition-transform duration-300 hover:scale-90 drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              <!-- MacBook image -->
+              <img src="./images/macbook 8.png" alt="MacBook" class="z-20  drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              
+              <!-- Weather screenshot inside screen -->
+              <img src="./images/findmyroom.png" 
+              class="absolute top-[3%] sm:left-[11%]  lg:left-[10.5%] xl:left-[10%] 2xl:left-[10.5%] left-[42px] w-[79%] h-[90%] object-cover rounded-lg z-10 "
+              alt="Weather App">
+            </div>
+            
+            <span class="bg-[#459bd5] flex justify-center items-center gap-2 border-[#459bd5] rounded-xl text-xl py-1 px-1 relative sm:right-4 sm:hidden z-20">
+              WeatherWeb
+              <img src="./images/external-link.svg" alt="">
+            </span>
+
+            </div>
+            
+       
+     </a>
+
+ 
+        <div class="w-[1px] h-[100%] xl:h-[100%] bg-blue-500 absolute left-[50%] lg:left-[49.7%]  z-0 bottom-8 hidden sm:block">
+          
+    </div>
+    <div class="w-6 h-6 sm:w-5 sm:h-5 bg-black rounded-full border-[3px] border-yellow-600 absolute top-1/2 sm:top-[44%]  lg:top-[50%] xl:top-[50%] 2xl:top-[50%] left-[47.55%] sm:left-[48.2%] md:left-[48.55%] lg:left-[48.7%] xl:left-[48.9%] z-10 hidden sm:block">
+      </div>
+    <div class="h-[1px] w-[20%] left-[50%] right-1/2 bg-[#1788ae] sm:top-[46%]  lg:top-[54%] xl:top-[53%] 2xl:top-[53%]  absolute top-1/2 hidden sm:block order-2"></div>
+
+
+
+     
+     <!-- Content about laptop -->
+
+     <div class="w-full my-4  sm:mr-10 2xl:mr-24 order-2 sm:order-1">
+      <h3 class="text-[#459bd5]  text-[20px] font-bold">🏠 FindMyRoom – Student Room Finder Web App</h3>
+      <span class="text-[#459bd5]  text-[20px] text-base ">(Website)</span>
+      <p class="text-justify text-sm font-bold pt-1 ">A responsive web application built to help students easily find and book rooms near their colleges. The platform simplifies the room-hunting process by providing a user-friendly interface and real-time availability details.</p>
+      <ul class="flex flex-wrap gap-4  mt-2  ">
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75 ">#HTML</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#CSS</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#JavaScript</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Tailwind Css</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text- transform transition-transform duration-300 hover:scale-75">#Node.js</li>
+         <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text- transform transition-transform duration-300 hover:scale-75">#Express.js</li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text- transform transition-transform duration-300 hover:scale-75">#Mongodb</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Git & GitHub</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75" >#Vs Code</li>
+      </ul> 
+     </div>
+     </div>
+
+ <!-- THirde 🤣🤣🤣🤣🤣 -->
+  <div class="px-4 w-full h-auto relative top-4  flex flex-col sm:flex-row  ">
+
+         <!-- laptop ancertag --> 
+        <a href="" class=" sm:h-1/2 sm:w-[100%] relative sm:top-24 z-10  ">
+          <div class="flex flex-col gap-2 justify-center items-center py-4">
+            <div class="relative w-[66%] md:w-[%] lg:w-[66%]  sm:w-[66%]  xl:w-[66%] 2xl:w-[65%]  lg:right-8    2xl:right-24 xl:right-16 sm:mr-10  md:bottom-12  lg:bottom-20 xl:bottom-24 2xl:bottom-20  z-30  transform transition-transform duration-300 hover:scale-90 drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              <!-- MacBook image -->
+              <img src="./images/macbook 8.png" alt="MacBook" class="z-20  drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              
+              <!-- Weather screenshot inside screen -->
+              <img src="./images/photo4.jpg" 
+              class="absolute top-[3%] sm:left-[11%]  lg:left-[10.5%] xl:left-[10%] 2xl:left-[10.5%] left-[42px] w-[79%] h-[90%] object-cover rounded-lg z-10 "
+              alt="Weather App">
+            </div>
+            
+            <span class="bg-[#459bd5] flex justify-center items-center gap-2 border-[#459bd5] rounded-xl text-xl py-1 px-1 relative sm:right-4 sm:hidden z-20">
+              WeatherWeb
+              <img src="./images/external-link.svg" alt="">
+            </span>
+
+            </div>
+     </a>
+
+ 
+        <div class="w-[1px] h-[100%] xl:h-[100%] bg-blue-500 absolute left-[50%] lg:left-[49.7%]  z-0 bottom-8 hidden sm:block">
+          
+    </div>
+    <div class="w-6 h-6 sm:w-5 sm:h-5 bg-black rounded-full border-[3px] border-yellow-600 absolute top-1/2 sm:top-[44%] md:top-[37%]  lg:top-[50%] xl:top-[50%] 2xl:top-[50%] left-[48.55%] sm:left-[48.2%] md:left-[48.55%] lg:left-[48.7%] xl:left-[48.9%] z-10 hidden sm:block">
+      </div>
+      <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] sm:top-[46%] md:top-[40%] lg:top-[54%] xl:top-[53%] 2xl:top-[53%]  absolute top-1/2 hidden sm:block"></div>
+
+
+
+     
+     <!-- Content about laptop -->
+
+     <div class="w-full my-4 sm:pl-4 sm:ml-8 2xl:ml-12">
+      <h3 class="text-[#fc815c]  text-[20px] font-bold">Weather Responsive Web</h3>
+      <span class="text-[#fc815c]  text-[20px] text-base ">(Website)</span>
+      <p class="text-justify text-sm font-bold pt-1 ">A responsive weather web app built with HTML, CSS, and JavaScript that fetches real-time data from a weather API. Features include location-based search, temperature, humidity, wind speed display, and dynamic backgrounds for different weather conditions.</p>
+      <ul class="flex flex-wrap gap-4  mt-2  ">
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75 ">#HTML</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#CSS</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#JavaScript</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Tailwind Css</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text- transform transition-transform duration-300 hover:scale-75">#WeatherAPI</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Git & GitHub</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75" >#Vs Code</li>
+      </ul> 
+     </div>
+     </div>
+     
+  <!-- Second Project🤣🤣✌️ -->
+   <div class="px-4 w-full h-auto relative top-4  flex flex-col sm:flex-row  ">
+
+       
+        
+        
+        
+        <!-- laptop ancertag --> 
+        <a href="" class=" sm:h-1/2 sm:w-[100%] relative sm:top-28 z-10 order-1 sm:order-2 ">
+          <div class="flex flex-col gap-2 justify-center items-center py-4">
+            <div class="relative w-[66%] md:w-[70%] lg:w-[68%]  sm:w-[68%]  xl:w-[68%] 2xl:w-[67%]  sm:left-6 lg:right-8     2xl:right-24 xl:right-16  md:bottom-12  lg:bottom-20 xl:bottom-24 2xl:bottom-20  z-30  transform transition-transform duration-300 hover:scale-90 drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              <!-- MacBook image -->
+              <img src="./images/macbook 8.png" alt="MacBook" class="z-20  drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              
+              <!-- Weather screenshot inside screen -->
+              <img src="./images/photo3.jpg" 
+              class="absolute top-[3%] sm:left-[11%]  lg:left-[10.5%] xl:left-[10%] 2xl:left-[10.5%] left-[42px] w-[79%] h-[90%] object-cover rounded-lg z-10 "
+              alt="Weather App">
+            </div>
+            
+            <span class="bg-[#459bd5] flex justify-center items-center gap-2 border-[#459bd5] rounded-xl text-xl py-1 px-1 relative sm:right-4 sm:hidden z-20">
+              WeatherWeb
+              <img src="./images/external-link.svg" alt="">
+            </span>
+
+            </div>
+            
+       
+     </a>
+
+ 
+        <div class="w-[1px] h-[100%] xl:h-[100%] bg-blue-500 absolute left-[50%] lg:left-[49.7%]  z-0 bottom-8 hidden sm:block">
+          
+    </div>
+    <div class="w-6 h-6 sm:w-5 sm:h-5 bg-black rounded-full border-[3px] border-yellow-600 absolute top-1/2 sm:top-[44%]  lg:top-[50%] xl:top-[50%] 2xl:top-[50%] left-[47.55%] sm:left-[48.2%] md:left-[48.55%] lg:left-[48.7%] xl:left-[48.9%] z-10 hidden sm:block">
+      </div>
+    <div class="h-[1px] w-[20%] left-[50%] right-1/2 bg-[#1788ae] sm:top-[46%]  lg:top-[54%] xl:top-[53%] 2xl:top-[53%]  absolute top-1/2 hidden sm:block order-2"></div>
+
+
+
+     
+     <!-- Content about laptop -->
+
+     <div class="w-full my-4  sm:mr-10 2xl:mr-24 order-2 sm:order-1">
+      <h3 class="text-[#47afa1]  text-[20px] font-bold">Weather Responsive Web</h3>
+      <span class="text-[#47afa1]  text-[20px] text-base ">(Website)</span>
+      <p class="text-justify text-sm font-bold pt-1 ">A responsive weather web app built with HTML, CSS, and JavaScript that fetches real-time data from a weather API. Features include location-based search, temperature, humidity, wind speed display, and dynamic backgrounds for different weather conditions.</p>
+      <ul class="flex flex-wrap gap-4  mt-2  ">
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75 ">#HTML</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#CSS</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#JavaScript</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Tailwind Css</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text- transform transition-transform duration-300 hover:scale-75">#WeatherAPI</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Git & GitHub</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75" >#Vs Code</li>
+      </ul> 
+     </div>
+     </div>
+
+
+     <!-- Fifth 🤣🤣🤣🤣🤣🤣 -->
+
+
+           
+      <div class="px-4 w-full h-auto relative top-4  flex flex-col sm:flex-row  ">
+
+       
+        
+        
+        
+        <!-- laptop ancertag --> 
+        <a href="" class=" sm:h-1/2 sm:w-[100%] relative sm:top-24 z-10  ">
+          <div class="flex flex-col gap-2 justify-center items-center py-4">
+            <div class="relative w-[66%] md:w-[%] lg:w-[66%]  sm:w-[66%]  xl:w-[66%] 2xl:w-[65%]  lg:right-8    2xl:right-24 xl:right-16 sm:mr-10  md:bottom-12  lg:bottom-20 xl:bottom-24 2xl:bottom-20  z-30  transform transition-transform duration-300 hover:scale-90 drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              <!-- MacBook image -->
+              <img src="./images/macbook 8.png" alt="MacBook" class="z-20  drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              
+              <!-- Weather screenshot inside screen -->
+              <img src="./images/photo1.png" 
+              class="absolute top-[3%] sm:left-[11%]  lg:left-[10.5%] xl:left-[10%] 2xl:left-[10.5%] left-[42px] w-[79%] h-[90%] object-cover rounded-lg z-10 "
+              alt="Weather App">
+            </div>
+            
+            <span class="bg-[#459bd5] flex justify-center items-center gap-2 border-[#459bd5] rounded-xl text-xl py-1 px-1 relative sm:right-4 sm:hidden z-20">
+              WeatherWeb
+              <img src="./images/external-link.svg" alt="">
+            </span>
+
+            </div>
+     </a>
+
+ 
+        <div class="w-[1px] h-[100%] xl:h-[100%] bg-blue-500 absolute left-[50%] lg:left-[49.7%]  z-0 bottom-8 hidden sm:block">
+          
+    </div>
+    <div class="w-6 h-6 sm:w-5 sm:h-5 bg-black rounded-full border-[3px] border-yellow-600 absolute top-1/2 sm:top-[44%] md:top-[37%]  lg:top-[50%] xl:top-[50%] 2xl:top-[50%] left-[48.55%] sm:left-[48.2%] md:left-[48.55%] lg:left-[48.7%] xl:left-[48.9%] z-10 hidden sm:block">
+      </div>
+      <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] sm:top-[46%] md:top-[40%] lg:top-[54%] xl:top-[53%] 2xl:top-[53%]  absolute top-1/2 hidden sm:block"></div>
+
+
+
+     
+     <!-- Content about laptop -->
+
+     <div class="w-full my-4 sm:pl-4 sm:ml-8 2xl:ml-12">
+      <h3 class="text-red-500  text-[20px] font-bold">Weather Responsive Web</h3>
+      <span class="text-red-500  text-[20px] text-base ">(Website)</span>
+      <p class="text-justify text-sm font-bold pt-1 ">A responsive weather web app built with HTML, CSS, and JavaScript that fetches real-time data from a weather API. Features include location-based search, temperature, humidity, wind speed display, and dynamic backgrounds for different weather conditions.</p>
+      <ul class="flex flex-wrap gap-4  mt-2  ">
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75 ">#HTML</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#CSS</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#JavaScript</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Tailwind Css</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text- transform transition-transform duration-300 hover:scale-75">#WeatherAPI</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Git & GitHub</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75" >#Vs Code</li>
+      </ul> 
+     </div>
+     </div>
+     
+  <!-- Second Project🤣🤣✌️ -->
+   <div class="px-4 w-full h-auto relative top-4  flex flex-col sm:flex-row  ">
+
+       
+        
+        
+        
+        <!-- laptop ancertag --> 
+        <a href="" class=" sm:h-1/2 sm:w-[100%] relative sm:top-28 z-10 order-1 sm:order-2 ">
+          <div class="flex flex-col gap-2 justify-center items-center py-4">
+            <div class="relative w-[66%] md:w-[70%] lg:w-[68%]  sm:w-[68%]  xl:w-[68%] 2xl:w-[67%]  sm:left-6 lg:right-8     2xl:right-24 xl:right-16  md:bottom-12  lg:bottom-20 xl:bottom-24 2xl:bottom-20  z-30  transform transition-transform duration-300 hover:scale-90 drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              <!-- MacBook image -->
+              <img src="./images/macbook 8.png" alt="MacBook" class="z-20  drop-shadow-[0_0px_60px_rgba(59,254,246,0.6)]">
+              
+              <!-- Weather screenshot inside screen -->
+              <img src="./images/photo2.jpg" 
+              class="absolute top-[3%] sm:left-[11%]  lg:left-[10.5%] xl:left-[10%] 2xl:left-[10.5%] left-[42px] w-[79%] h-[90%] object-cover rounded-lg z-10 "
+              alt="Weather App">
+            </div>
+            
+            <span class="bg-[#459bd5] flex justify-center items-center gap-2 border-[#459bd5] rounded-xl text-xl py-1 px-1 relative sm:right-4 sm:hidden z-20">
+              WeatherWeb
+              <img src="./images/external-link.svg" alt="">
+            </span>
+
+            </div>
+            
+       
+     </a>
+
+ 
+        <div class="w-[1px] h-[100%] xl:h-[100%] bg-blue-500 absolute left-[50%] lg:left-[49.7%]  z-0 bottom-8 hidden sm:block">
+          
+    </div>
+    <div class="w-6 h-6 sm:w-5 sm:h-5 bg-black rounded-full border-[3px] border-yellow-600 absolute top-1/2 sm:top-[44%]  lg:top-[50%] xl:top-[50%] 2xl:top-[50%] left-[47.55%] sm:left-[48.2%] md:left-[48.55%] lg:left-[48.7%] xl:left-[48.9%] z-10 hidden sm:block">
+      </div>
+    <div class="h-[1px] w-[20%] left-[50%] right-1/2 bg-[#1788ae] sm:top-[46%]  lg:top-[54%] xl:top-[53%] 2xl:top-[53%]  absolute top-1/2 hidden sm:block order-2"></div>
+
+
+
+     
+     <!-- Content about laptop -->
+
+     <div class="w-full my-4  sm:mr-10 2xl:mr-24 order-2 sm:order-1">
+      <h3 class="text-[#fc815c] text-[20px] font-bold">Weather Responsive Web</h3>
+      <span class="text-[#fc815c]  text-[20px] text-base ">(Website)</span>
+      <p class="text-justify text-sm font-bold pt-1 ">A responsive weather web app built with HTML, CSS, and JavaScript that fetches real-time data from a weather API. Features include location-based search, temperature, humidity, wind speed display, and dynamic backgrounds for different weather conditions.</p>
+      <ul class="flex flex-wrap gap-4  mt-2  ">
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75 ">#HTML</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#CSS</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#JavaScript</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Tailwind Css</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text- transform transition-transform duration-300 hover:scale-75">#WeatherAPI</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75">#Git & GitHub</li>
+        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base transform transition-transform duration-300 hover:scale-75" >#Vs Code</li>
+      </ul> 
+     </div>
+     </div>
+     
+     
+
+    <!-- All Certificates and Achievment  -->
+
+     <div class="w-[1px] h-16 bg-blue-500 relative left-[50%] lg:left-[49.7%] 2xl:left-[49.7%] 
+     xl:left-[49.7%] bottom-[19px] z-20 hidden sm:block" >
+
+   </div>
+
+    <div class="w-1/2 h-18  absolute left-[25%]  flex justify-center items-center ">
+     
+   <p class="text-3xl sm:text-3xl bg-gray-900 sm:w-max relative sm:bottom-7 z-0 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">Proof of Growth ?</p>
+   
+    </div>
+
+    <!-- Sliding of certificates ans achievement -->
+
+     <!-- Resume pdf -->
+     <div id="resumeContainer" class="absolute left-[1rem] sm:left-[10%] lg:left-[20%] 2xl:left-[23%] 2xl:top-[10rem]  z-60 flex justify-center items-center">
+      <!-- Cancel img -->
+              <img id="cancel_2" class="w-8 h-8 z-60 absolute top-6 right-2"  src="./images/cancel.png" alt="">
+          <!-- resume Image -->
+              <img id="certificate_img" class="w-[38rem] h-[30rem] lg:w-[40rem] lg:h-[30rem] 2xl:w-[60rem] 2xl:h-[75rem]  left-4   z-50 hidden" src="" alt="">
+            </div>
+
+   
+    <!-- Swiper or crousal -->
+   <div class="abcd swiper mySwiper w-[90%] h-[20rem] 2xl:h-[22rem] absolute top-20 shadow-[0_0px_50px_rgba(59,130,246,0.6)] rounded-full">
+
+     <!-- SHOW -->
+    <button id="certificate_show" class="absolute left-[45%] top-4 rounded-lg bg-green-500 px-4 z-60" >Show</button>
+    <div  class="swiper-wrapper flex absolute left-[10%] ">
+      <!-- 1st slide -->
+      <div class="swiper-slide w-1/2 h-12 flex items-center justify-cente">
+   <!-- first img -->
+        <img id="swap" src="./images/certificate1.jpg" class=" rounded-lg shadow-lg w-[80%] h-full" />
+      </div>
+
+      <!-- second slide -->
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img id="swap" src="./images/certificate2.jpg" class="w-[80%] h-full rounded-lg shadow-lg" />
+      </div>
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img id="swap" src="./images/certificate3.jpg" class="w-[80%] h-full  rounded-lg shadow-lg" />
+      </div>
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img id="swap" src="./images/campus-ambesdr_page-0001.jpg" class="w-[80%] h-full  rounded-lg shadow-lg" />
+      </div>
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img id="swap" src="https://swiperjs.com/demos/images/nature-5.jpg" class="w-[80%] h-full  rounded-lg shadow-lg" />
+      </div>
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img id="swap" src="https://swiperjs.com/demos/images/nature-6.jpg" class="w-[80%] h-full  rounded-lg shadow-lg" />
+      </div>
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img id="swap" src="https://swiperjs.com/demos/images/nature-7.jpg" class="w-[80%] h-full  rounded-lg shadow-lg" />
+      </div>
+     
+      
+    </div>
+    
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+   <div class="swiper-button-prev"></div>
+  </div>
+
+
+
+
+      <!-- Extra cariculam jo tume life main kiya hai ya ukhda hai -->
+     
+     
+  <div class="w-1/2 h-10  relative top-40 left-[23%] md:left-[25%] 2xl:left-[26%]">
+    <p class="text-3xl sm:text-3xl bg-gray-900 sm:w-max relative sm:bottom-7 z-0 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">EXTRACURRICULAR?</p>
+  </div>
+
+  <!-- Extracarricular crousal -->
+
+  <div class="swiper mySwiper w-[90%] h-[20rem] 2xl:h-[22rem] absolute top-48 shadow-[0_0px_50px_rgba(59,130,246,0.6)] rounded-lg">
+    <div class="swiper-wrapper flex absolute left-[10%] ">
+      <div class="swiper-slide w-1/2 h-12 flex items-center justify-cente">
+        <img src="./images/certificate1.jpg" class=" rounded-lg shadow-lg w-[80%] h-full" />
+      </div>
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" class="w-[80%] h-full rounded-lg shadow-lg" />
+      </div>
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" class="w-[80%] h-full  rounded-lg shadow-lg" />
+      </div>
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="w-[80%] h-full  rounded-lg shadow-lg" />
+      </div>
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img src="https://swiperjs.com/demos/images/nature-5.jpg" class="w-[80%] h-full  rounded-lg shadow-lg" />
+      </div>
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img src="https://swiperjs.com/demos/images/nature-6.jpg" class="w-[80%] h-full  rounded-lg shadow-lg" />
+      </div>
+      <div class="swiper-slide w-[300px] h-[300px] flex items-center justify-center">
+        <img src="https://swiperjs.com/demos/images/nature-7.jpg" class="w-[80%] h-full  rounded-lg shadow-lg" />
+      </div>
+     
+      
+    </div>
+    
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+   <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Let's connect  send email-->
+
+     
+  <div class="w-1/2 h-10  relative top-72  left-[23%] md:left-[25%] 2xl:left-[26%]">
+    <p class="text-3xl sm:text-3xl bg-gray-900 sm:w-max relative sm:bottom-7 z-0 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">Let's Connect</p>
+  </div>
+   
+
+  <!-- Email kr skte ho tum ya se mujhe  -->
+
+  <div class="w-full h-[45rem] md:h-[28rem]    grid grid-rows-[40%_60%] md:grid-rows-1  md:grid-cols-[50%_50%] relative  top-[20rem] ">
+
+ <!-- Connect img -->
+    <div class=" md:h-full   ">
+<img src="./images/contact-me.svg" alt="" class="w-full h-full relative md:top-3">
+    </div>
+
+      <!-- Eamil Form to send email -->
+
+   
+
+    <div class=" flex flex-row md:flex-row items-center relative  p-2">
+     <div class="w-full   h-full flex flex-row">
+      <form class="px-2 w-full"  action="https://api.web3forms.com/submit" method="POST">
+          <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="e61d0689-58b6-4632-87ed-a523e48baf83">
+        <!-- name -->
+        <label for="name">Name</label>
+        <div class=" text-black rounded-lg flex justify-center">
+          <!-- name logo -->
+         <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none" >
+          <img src="./images/user.png" alt="" class="w-6 h-6 relative left-2 bottom-[10rem] md:bottom-[10.5rem] 2xl:bottom-[10.5rem]" >
+         </div>
+         <!-- name input -->
+          <input  type="text" name="name" id="name" placeholder="Enter your name" class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " required>
+
+        </div>
+        <div id="hide" class="hidden">
+         
+          <small class="text-red-500">Your name should be greater the 3</small>
+
+        </div>
+<!-- email -->
+        <label for="email">Your Email</label>
+        <div class="bg-white text-black rounded-lg flex ">
+          <!-- email logo -->
+
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+         <img src="./images/email.svg" alt="" class="w-4 h-4 text-gray-500 dark:text-gray-400 relative bottom-[6rem] md:bottom-[6.4rem] 2xl:bottom-[6.5rem] left-3">
+         </div>
+         <!-- email input -->
+          <input type="text" name="name" id="name" placeholder="name@gmail.com" class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+        </div>
+
+        <!-- textarea -->
+         <label for="message"> Message</label>
+         <div class="bg-white text-black rounded-lg flex justify-center" >
+          <textarea  class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-2 p-2.5 dark:bg-gray-900 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" rows="8" id="message" name="message"  id="" required></textarea>
+        </div>
+        <h1  class="absolute right-4">Max Length: <span id="character_count">400</span></h1>
+         <button type="submit" class="w-full h-10 bg-[#1788ae] my-6 rounded-lg border-2  focus:border-[#1788ae] ">Send</button>
+      </form>
+
+    </div>
+    </div>
+  </div>
+   
+</main>
+
+<footer class="w-full h-24  flex flex-col justify-center items-center  relative top-[23rem] sm:top[20rem] pb-4">
+  <p>Shubhanshu © 2025</p>
+  <div>
+    <img src="./images/logo.png" alt="" class="w-10 h-10">
+  </div>
+ <ul class="flex gap-4 ">
+  <a href="">
+    <li><img src="./images/linkedin.svg" alt="" class="w-6 h-6"></li>
+  </a>
+  <a href="">
+    <li><img src="./images/email.svg" alt=""  class="w-6 h-6"></li>
+  </a>
+  <a href="">
+    <li><img src="./images/leetcode.png" alt=""  class="w-6 h-6"></li>
+  </a>
+  <a href="">
+    <li><img src="./images/github.svg" alt=""  class="w-6 h-6"></li>
+  </a>
+  <a href="">
+    <li><img src="./images/gfg.png" alt=""  class="w-6 h-6"></li>
+  </a>
+ </ul>
+
+ 
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+<script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+ 
+<script src="script.js"></script>
+
+
+</body>
+</html>

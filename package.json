@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  },
+  "scripts": {
+    "watch": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14"
+  },
+  "name": "tailwind-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prettier.config.js",
+  "author": "",
+  "license": "ISC"
+}
