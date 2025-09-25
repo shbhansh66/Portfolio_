@@ -6,13 +6,13 @@
 
 function setDarkandLight(){
   if(window.matchMedia("(prefers-color-scheme: dark)").matches){
-    document.body.classList.add("bg-gray-900");
+    document.body.classList.add("bg-gray-900","text-white");
     document.body.classList.remove("bg-white");
       moon.classList.add("hidden");  
     sun.classList.remove("hidden"); 
   }
   else{
-    document.body.classList.add("bg-white");
+    document.body.classList.add("bg-white" ,"text-white");
     document.body.classList.remove("bg-gray-900");
    
     moon.classList.remove("hidden"); 
